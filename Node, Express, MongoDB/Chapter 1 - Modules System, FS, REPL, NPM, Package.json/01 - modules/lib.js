@@ -1,0 +1,21 @@
+/*For CommonJS Method*/ 
+
+// exports.sum = (a, b) => {
+//   return a + b;
+// };
+
+// exports.diff = (a, b) => {
+//   return a - b;
+// };
+
+/*For EcmaScript 6 Method*/ 
+
+const sum = (a, b) => {
+  return a + b;
+};
+
+const diff = (a, b) => {
+  return a - b;
+};
+
+export { sum, diff };
