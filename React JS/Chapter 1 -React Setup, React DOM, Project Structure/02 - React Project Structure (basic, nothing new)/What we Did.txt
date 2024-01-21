@@ -1,0 +1,2 @@
+-> remove unwanted files
+-> check a simple hello world app running
