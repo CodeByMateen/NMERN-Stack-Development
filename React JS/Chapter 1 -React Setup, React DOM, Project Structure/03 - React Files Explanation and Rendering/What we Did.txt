@@ -1,0 +1,5 @@
+-> understand files in react
+-> understand how we're connecting and rendering index.html contains div having root class with App.js in index.js file using ReactDOM
+-> understand functional component in App.Js
+-> understand hierarchy of functional components e.g. one functional component inside another functional component like tag inside another tag
+-> declaring variables inside function and using them by this {}
