@@ -1,0 +1,5 @@
+-> JSX props, a pretty similar way to html id and class
+-> old props way and (new props way through destructuring)
+-> Default Value of Props and Spread operator for object
+-> Video css float fixed
+-> mini project

@@ -1,0 +1,5 @@
+-> Lerned about reusable components
+-> Learned about fragment <> </>
+-> html class and JSX className
+-> Insering variables, functions of JS and Style inside tag of JSX
+-> inline and external css styling

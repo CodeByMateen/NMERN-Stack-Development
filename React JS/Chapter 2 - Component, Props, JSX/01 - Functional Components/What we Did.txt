@@ -1,0 +1,5 @@
+-> understand more on functional components
+-> a component is function that returns UI
+-> single component in same file (preferred to follow this approach) and change impact on import, export
+-> multiple components in same file, and change impact on import, export
+-> single line return, multi lines return
