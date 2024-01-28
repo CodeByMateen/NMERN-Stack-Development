@@ -1,0 +1,7 @@
+-> see how by conditional rendering, we can change ui
+-> did conditional rendering by putting channel html code outside return in Video function and got to know it's not a good way.
+-> shortcut way to do conditional rendering in return of video function.
+-> short circuit way to achieve the same.
+-> rendering with maps - Collection <list>
+-> console key error which says every component shall have a key like unique key, code in 3 - maps, list collection
+-> did refactor of code by putting data into seprate data folder and data file.

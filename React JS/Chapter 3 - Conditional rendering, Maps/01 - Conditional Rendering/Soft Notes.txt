@@ -1,0 +1,22 @@
+we can use html code below function, above return as the file is a jsx so it'll be a valid syntax e.g. 
+
+function Video({title,channel="CodeByMateen",views,time}) {
+
+  // See this, it's valid!
+  let channelJSX = <div className="channel">{channel}</div>
+
+  return (
+	{channelJSX}
+  );
+}
+
+but this is not a good way
+
+--> you can't apply if else condition inside return as the conditions are not returning something
+--> if you want to do conditions, it's better to use ternary operator
+ and while putting ternary, if you dont' want to insert any value for else case, you can simply use null e.g. condition?result:null
+
+------------------------------
+
+In our mini project in chapter 2, we created 3 thumbnail of videos, now we want to add verified tick to channels and we'll do it through conditional rendering
+see snippet code 1 - Conditional Rendering
