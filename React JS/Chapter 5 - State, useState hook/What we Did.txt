@@ -45,3 +45,6 @@ Still if we want to do this, we can use updater like this:
     }
 
 the updater is creating a queue like structure of record.
+
+-> we have created add video button, on clicking it, new video appears and as many times you click, new video will appear.
+-> the same we did in loop for VU test like but 10X.
