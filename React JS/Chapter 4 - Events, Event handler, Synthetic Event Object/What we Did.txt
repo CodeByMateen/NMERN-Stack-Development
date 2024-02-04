@@ -1,0 +1,32 @@
+-> created buttons play and pause and put event handler on them
+
+-> instead of calling event handler like:
+return(
+        <button onClick={console.log('Play Button Called')}>Play</button>
+    );
+
+--> it's better to define it like: (this is a proper way)
+return(
+        <button onClick={()=>console.log('Play Button Called')}>Play</button> // now, it's only defined and chala nahi hai
+    );
+
+-> more good convention is to create a function of handleClick and define the onClick work on it, see code of 1 - Events and EventHandler 
+
+-> we created two buttons play and pause and pass their names and messages through props -> see code of 1 - Events and EventHandler
+
+-> but if we declare name in App.js like <playButton>Play<playButton/> and want this to be go back to PlayButton.js, here's a method of children props -> see code of 2 - Children Props
+
+-> we can also pass function as props -> see code of 3 - Event and Event Handler (Level - 2)
+--> plus these functions can be given any name e.g. onClick, onSmash, onPress -> (these are indicating that we're pressing button or something and on the response, the result code written in function will trigger)
+
+-> now we have created two functions onPlay and onPause on playButton tag and pass it on playButton.js, if we click on button, we change the functions message but ui remains same. so, this is solved by useState as it updates state.
+--> bcz React only update state variables 
+
+-> we created seprate button for each video and clicking on particular button, it's action will be take place, if we click on another button, it's action will take place i.e. inshort: these buttons are independent to each other.
+
+-> Event Bubbling: an element from html propagates throughout to its parent e.g. we make noise in room which further can be listen to house and street.
+--> we have an event object e which contains information regrading to event just like we use e on c# winforms.net and it's a synthetic event
+
+--> to stop event bubbling, we have a method, e.stopPropagation() // -> see code on 06 - Event Bubbling, Synthetic Event Object (e)
+
+--> one more is e.preventDefault(); // generally we use it on forms and it means to stop the behavior occured on page due to that event

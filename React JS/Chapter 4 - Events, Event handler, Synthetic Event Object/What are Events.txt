@@ -1,0 +1,2 @@
+Events are way to communicate with applications.
+we have mouse events, keyboard events in majorly use.
