@@ -1,0 +1,47 @@
+-> in code section 0, we see the buttons, on clicking them, their status -> playing, paused is working but ui has no effect. Also, the counter is also not incrementing in UI. This effect can be shown through useState hook on -> code 01 - useState Hook
+-> useStates Hook remembers the old value
+
+.... let's see the following code:
+
+function Counter(){
+    const [number, setNumber] = useState(0)
+
+    function handleClick(e){
+        e.stopPropagation()
+        setNumber(number+1)
+        console.log(number)
+    }
+
+    return(
+        <>
+        <h1>{number}</h1>
+        <button onClick={handleClick}>Add</button>
+        </>   
+    );
+}
+
+here, the ui will show incremented number but in console, the increment change will not be shown insant. e.g. if number is 1 and we click on Add, the ui will show 2 but in console it's 1 as useState itself called and do the storing functinality.
+
+    function handleClick(e){
+        e.stopPropagation()
+        setNumber(number+1)
+        setNumber(number+1)
+        setNumber(number+1)
+        setNumber(number+1)
+        console.log(number)
+    }
+
+if we do this, and click on Add button, the increment change will be occured once not 4X
+we can also consider this as when we click on like button of post, the post is liked.
+Still if we want to do this, we can use updater like this:
+
+    function handleClick(e){
+        e.stopPropagation()
+        setNumber(number=>number+1)
+        setNumber(number=>number+1)
+        setNumber(number=>number+1)
+        setNumber(number=>number+1)
+        console.log(number)
+    }
+
+the updater is creating a queue like structure of record.
