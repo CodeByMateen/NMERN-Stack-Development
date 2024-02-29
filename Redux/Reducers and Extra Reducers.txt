@@ -1,0 +1,4 @@
+if we create a userSlice and it contains micro-reducer actions like addUser, deleteUser etc. we declare this slice in the reducer of store. if we have an adminSlice, and we have called addUser whereas addUser is not in adminslice, this addUser will also be searched and checked at admin side as it's slice is also declare in the reducer of store. This is how redux architecture words. Now, as seen below: if we want a particular slice let's say again addUser to be called in adminSlice as well, we can use extra reducer.
+
+-- If action is supposed to be handled by one reducer, use Reducer
+-- If action is supposed to be handled by multiple reducers, use Extra Reducer

@@ -1,0 +1,16 @@
+Terms:
+-- Dispatch
+-- Store
+-- Action
+-- Payload
+-- Reducers // joh hamara kaam karta hai
+-- Slice
+-- redux thunk, saga // middlewares for asynchronous actions
+-- useSelector // through this, we can access our data of store anywhere, it's like the bank has branches all over the country
+
+
+Consider, we have a bank account and we go to bank to deposit/withdraw money. 
+Let's say we want to withdraw money of Rs. 100 from bank. we go to bank, we have mulitiple bank sections a section of counter where we can withdraw/deposit money. a section of information desk. a section of bank terms, policies etc. 
+Now, we withdraw money from counter, here the person takes our check and give us money.
+
+In the above scenario, We as a User holds a Dipatch function which consists of action, payload. Here, our action was to withdraw money and the payload was Rs. 100. The bank is the Store. The multiple sections in the bank are Slices. We have redux thunk and saga middlewares. our action and payload is taken by counter person which is a reducer. in mulitple sections we have even multiple reducers.

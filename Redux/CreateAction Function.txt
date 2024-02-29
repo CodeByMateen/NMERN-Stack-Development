@@ -1,0 +1,1 @@
+for Extra Reducers, if the micro reducer is not defined, it can be defined in createAction Function so that it can be accessed by any slice.

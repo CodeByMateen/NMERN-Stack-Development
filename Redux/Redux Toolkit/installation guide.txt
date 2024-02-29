@@ -1,0 +1,15 @@
+npm create vite
+select project name
+select framework like react
+select language like javascript
+
+cd project_name
+npm install
+npm run dev
+
+npm i styled-components // for styled components
+npm i react-icons
+
+npm i react-redux @reduxjs/toolkit // react-redux to binding react with redux
+
+npm i chance // fake JSON-Schema + fake data generators
