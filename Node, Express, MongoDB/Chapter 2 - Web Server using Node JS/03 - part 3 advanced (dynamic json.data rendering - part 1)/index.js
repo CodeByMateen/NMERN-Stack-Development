@@ -6,7 +6,7 @@ const data = fs.readFileSync("data.json", "utf-8");
 
 const rawData = JSON.parse(data);
 const products = rawData.products;
-const product = rawData.products[0];
+const product = rawData.products[0]; 
 
 const server = http.createServer((req, res) => {
   console.log("Server Created");
