@@ -9,4 +9,4 @@ React JS Topics covered :
 5. How to use Reducers for the state management
 6. Concurrency in React.
 7. Lazy loading and Suspense
-8. Reference forwarding : forwardRef 
+8. Reference forwarding : forwardRef
